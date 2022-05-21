@@ -12,13 +12,13 @@
 
 <body>
     <header>
-        <span>SIGAA 2.0</span>
+        <span>RETRO - SIGAA</span>
     </header>
 
     <main>
         <div class="action-bar">
-            <input>
-            <button>Procurar</button>
+            <input name="search" id="search" type="text" placeholder="Search">
+            <button class="bt-search">Procurar</button>
             <button class="bt-add">Adicionar</button>
         </div>
 
@@ -41,7 +41,7 @@
                             <input data-mascara="matricula" name="matricula" id="matricula" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');" placeholder="Matricula" maxlength="10"/>
                         </div>
                     </form>
-                    <div class="action">
+                    <div class="bt-save">
                         <button>SALVAR</button>
                     </div>
     
@@ -51,7 +51,7 @@
     </main>
 
     <footer>
-        <span>opa</span>
+        <span>LET'S PLAY</span>
     </footer>
 </body>
 
