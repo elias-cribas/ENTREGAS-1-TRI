@@ -29,13 +29,13 @@ btAdd.addEventListener("click", () => {
     const cloneModal = templateModalAluno.content.cloneNode(true)
     container.prepend(cloneModal)
 
-    const audio = new Audio('./click_sound.wav')
+    const audio = new Audio('./sounds/click_sound.wav')
     audio.play()
     return
 })
 
 btSearch.addEventListener("click", () => {
-    const audio = new Audio('./click_sound.wav')
+    const audio = new Audio('./sounds/click_sound.wav')
     audio.play()
     return
 })
@@ -52,12 +52,12 @@ container.addEventListener("click", ev => {
     const btClose = ev.target.closest(".bt-close")
     const btSave = ev.target.closest(".bt-save")
     if (btClose) {
-        const audio = new Audio('./close_modal.wav')
+        const audio = new Audio('./sounds/close_modal.wav')
         audio.play()
         return
     }
     if (btSave) {
-        const audio = new Audio('./save_sound.wav')
+        const audio = new Audio('./sounds/save_sound.wav')
         audio.play()
         return
     }
