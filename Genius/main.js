@@ -21,7 +21,7 @@ divMain.addEventListener("click", ev => {
     const idxClickedElement = divs.indexOf(ev.target)
 
     if (idxClickedElement !== sequencia[currentColorPosition]) {
-        painel.style.color = "red";
+        painel.style.color = "#2a3d44";
         painel.innerHTML = "YOU LOSE"
         divPontuacao.innerHTML = ""
         return
@@ -45,6 +45,7 @@ divs.forEach(div => {
 })
 
 function playAnimationColors() {
+    animatingColors = true
     sequencia.forEach((current, index) => {
         setTimeout(() => {
             divs[current].classList.add("animate");
@@ -59,7 +60,6 @@ function inicio() {
     currentColorPosition = 0
     let idx = setInterval(() => {
         painel.innerHTML = cnt
-        painel.style.color = "black";
         cnt--
         if (cnt <= -1) {
             painel.innerHTML = "POINTS"
