@@ -170,5 +170,6 @@ textarea:focus, input:focus {
 
 .action-bar button:hover{
     color: #03c688;
+    transform: scale(.98);
     background-color: #0c1518;
 }
