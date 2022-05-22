@@ -40,10 +40,10 @@ header>span {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
+    bottom: 0px;
     padding: .25em;
     right: 0;
-    bottom: 0;
     left: 0;
     color: var(--font-color);
     background-color: var(--ascent-color);
@@ -71,12 +71,11 @@ button {
     background-color: #0c1518;
 }
 
-.bt-save button:active{
+.bt-save button:active {
     transform: scale(.98);
     color: #03c688;
     background-color: #0c1518;
 }
-
 
 .modal {
     background-color: var(--modal-color);
@@ -128,7 +127,8 @@ button {
     color: var(--font-color);
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
     outline: none;
 }
 
@@ -168,7 +168,7 @@ textarea:focus, input:focus {
     border-radius: 5px;
 }
 
-.action-bar button:hover{
+.action-bar button:hover {
     color: #03c688;
     transform: scale(.98);
     background-color: #0c1518;
