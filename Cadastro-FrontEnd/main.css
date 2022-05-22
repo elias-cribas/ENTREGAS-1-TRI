@@ -116,8 +116,12 @@ button {
     width: 100%;
 }
 
-.modal form>div>input::placeholder {
+.modal input::placeholder {
     color: var(--font-color);
+}
+
+textarea:focus, input:focus {
+    outline: none;
 }
 
 .modal div.bt-save {
