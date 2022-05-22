@@ -53,7 +53,7 @@ footer {
 
 button {
     font-family: "Press Start 2P", cursive;
-    color: #03c688;
+    color: #039164;
     background-color: var(--background-color);
 }
 
@@ -67,8 +67,16 @@ button {
 
 .bt-save button:hover {
     transform: scale(.98);
+    color: #03c688;
     background-color: #0c1518;
 }
+
+.bt-save button:active{
+    transform: scale(.98);
+    color: #03c688;
+    background-color: #0c1518;
+}
+
 
 .modal {
     background-color: var(--modal-color);
@@ -151,11 +159,16 @@ textarea:focus, input:focus {
 }
 
 .action-bar button {
-    color: #03c688;
+    color: #01aa74;
     background-color: var(--modal-color);
     display: inline-block;
     padding: 10px 30px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
+}
+
+.action-bar button:hover{
+    color: #03c688;
+    background-color: #0c1518;
 }
